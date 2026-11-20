@@ -10,25 +10,21 @@
         defer></script>
 </head>
 
-<body>
-    <nav class="navbar bg-1 fg-2 border-bottom border-danger">
+<body class="bg-gray">
+    <nav class="navbar bg-1 fg-2 border-bottom border-danger bg-black">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                Shiny
-            </a>
+            <p>Shiny Checker</p>
         </div>
     </nav>
-    <div class="d-flex flex-column align-items-center justify-content-center">
-        <h1 class="border-bottom">Insira seu pokemon</h1>
-        <div class="w-max">
+    <div class="d-flex p-3 flex-column align-items-center justify-content-center">
+        <h1 class="border-bottom fg-white">Insira seu Pokémon</h1>
+        <div class="align-items-center justify-content-center">
                 <input type="text" class="form-control" id="pokemon" placeholder="Digite seu pokemon aqui"><br>
-                <button onclick="mostrar()" class="btn btn-primary p-4">Pesquise seu pokemon</button><br>
+                <button onclick="mostrar()" class="btn btn-primary p-4">Pesquise seu Pokémon</button><br>
         </div>
 
-        <div class="d-flex flex-row">
-        <img src="" alt="Pokemon" class="w-10 card border p-4" id="pokemonN" style="display:none">
-        <img src="" alt="Pokemon" class="w-10 card border p-4" id="pokemonS" style="display: none">
-        </div>
+            <div id="pokemonN" class="p-3 flex-row justify-content-center d-none gap-3"></div>
+        
     </div>
     <script src="Poke.js"></script>
 </body>

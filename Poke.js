@@ -30,13 +30,13 @@ async function mostrar() {
 
         img2.innerHTML += `
             <div class="card p-3 animation-pop">
-            <img src="${dados.sprites.versions["generation-v"]["black-white"].animated.front_shiny || pokemon.sprites.front_shiny}" class=" hover-lift w-10 border rounded">
+            <img src="${dados.sprites.versions["generation-v"]["black-white"].animated.front_shiny || pokemon.sprites.front_shiny}" class=" hover-lift img-fluid border rounded">
             <p>${pokemon} shiny</p>
             </div>
             `
         img2.innerHTML += `
             <div class="card p-3 animation-pop">
-            <img src="${dados.sprites.versions["generation-v"]["black-white"].animated.front_default || pokemon.sprites.front_default}" class="hover-lift w-10 border rounded">
+            <img src="${dados.sprites.versions["generation-v"]["black-white"].animated.front_default || pokemon.sprites.front_default}" class="hover-lift img-fluid border rounded">
             <p>${pokemon} normal</p>
             </div>
             `
